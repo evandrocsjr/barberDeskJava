@@ -4,12 +4,33 @@
   <NonVisualComponents>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
       <SubComponents>
-        <Menu class="javax.swing.JMenu" name="jMenu1">
+        <Menu class="javax.swing.JMenu" name="jMenuRegister">
           <Properties>
             <Property name="text" type="java.lang.String" value="Cadastro"/>
           </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemClient">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="2" name="C:\Users\Evandro\Documents\NetBeansProjects\barbershop\src\main\java\View\imagens\icons\cliente-icon.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Cliente"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemClientActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemService">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="2" name="C:\Users\Evandro\Documents\NetBeansProjects\barbershop\src\main\java\View\imagens\icons\tesoura-icon.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Servi&#xe7;o"/>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu2">
+        <Menu class="javax.swing.JMenu" name="jMenuOperation">
           <Properties>
             <Property name="text" type="java.lang.String" value="Opera&#xe7;&#xe3;o"/>
           </Properties>

@@ -26,6 +26,7 @@ public class LoginView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jButton1 = new javax.swing.JButton();
         usernameInput = new javax.swing.JTextField();
         passwordInput = new javax.swing.JPasswordField();
         jLabelusernameLabel = new javax.swing.JLabel();
@@ -37,13 +38,19 @@ public class LoginView extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jButton1.setBackground(new java.awt.Color(102, 0, 0));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("Entrar");
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 600, 290, 30));
+
         usernameInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 usernameInputActionPerformed(evt);
             }
         });
         getContentPane().add(usernameInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 430, 290, 40));
-        getContentPane().add(passwordInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 530, 290, 40));
+        getContentPane().add(passwordInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 510, 290, 40));
 
         jLabelusernameLabel.setBackground(new java.awt.Color(0, 0, 0));
         jLabelusernameLabel.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -57,7 +64,7 @@ public class LoginView extends javax.swing.JFrame {
         jLabelpasswordLabel.setForeground(new java.awt.Color(255, 255, 255));
         jLabelpasswordLabel.setText("Senha");
         jLabelpasswordLabel.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        getContentPane().add(jLabelpasswordLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 500, -1, -1));
+        getContentPane().add(jLabelpasswordLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 480, -1, -1));
 
         jLabelTitleLogin.setBackground(new java.awt.Color(0, 0, 0));
         jLabelTitleLogin.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -117,6 +124,7 @@ public class LoginView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabelTitleLogin;
     private javax.swing.JLabel jLabelbackgroundLogin;
     private javax.swing.JLabel jLabelbackgroundPanelLogin;

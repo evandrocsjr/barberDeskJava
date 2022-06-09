@@ -28,18 +28,34 @@ public class MenuPrincipalView extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
+        jMenuRegister = new javax.swing.JMenu();
+        jMenuItemClient = new javax.swing.JMenuItem();
+        jMenuItemService = new javax.swing.JMenuItem();
+        jMenuOperation = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Evandro\\Documents\\NetBeansProjects\\barbershop\\src\\main\\java\\View\\imagens\\fundo-MenuPrincipal.jpg")); // NOI18N
 
-        jMenu1.setText("Cadastro");
-        jMenuBar1.add(jMenu1);
+        jMenuRegister.setText("Cadastro");
 
-        jMenu2.setText("Operação");
-        jMenuBar1.add(jMenu2);
+        jMenuItemClient.setIcon(new javax.swing.ImageIcon("C:\\Users\\Evandro\\Documents\\NetBeansProjects\\barbershop\\src\\main\\java\\View\\imagens\\icons\\cliente-icon.png")); // NOI18N
+        jMenuItemClient.setText("Cliente");
+        jMenuItemClient.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemClientActionPerformed(evt);
+            }
+        });
+        jMenuRegister.add(jMenuItemClient);
+
+        jMenuItemService.setIcon(new javax.swing.ImageIcon("C:\\Users\\Evandro\\Documents\\NetBeansProjects\\barbershop\\src\\main\\java\\View\\imagens\\icons\\tesoura-icon.png")); // NOI18N
+        jMenuItemService.setText("Serviço");
+        jMenuRegister.add(jMenuItemService);
+
+        jMenuBar1.add(jMenuRegister);
+
+        jMenuOperation.setText("Operação");
+        jMenuBar1.add(jMenuOperation);
 
         setJMenuBar(jMenuBar1);
 
@@ -58,6 +74,10 @@ public class MenuPrincipalView extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jMenuItemClientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemClientActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItemClientActionPerformed
 
     /**
      * @param args the command line arguments
@@ -96,8 +116,10 @@ public class MenuPrincipalView extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItemClient;
+    private javax.swing.JMenuItem jMenuItemService;
+    private javax.swing.JMenu jMenuOperation;
+    private javax.swing.JMenu jMenuRegister;
     // End of variables declaration//GEN-END:variables
 }
