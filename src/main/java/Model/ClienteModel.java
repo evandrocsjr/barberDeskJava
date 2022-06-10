@@ -10,72 +10,23 @@ import java.util.Date;
  *
  * @author Evandro
  */
-public class ClienteModel {
+public class ClienteModel extends PessoaModel {
     
-    private int id;
-    private String name;
-    private char sex;
-    private Date birthDate;
-    private String telephone;
-    private String email;
-    private String rg;
     private String address;
     private String cep;
 
-    public ClienteModel(int id, String name, char sex, Date birthDate, String telephone, String email, String rg, String address, String cep) {
-        this.id = id;
-        this.name = name;
-        this.sex = sex;
-        this.birthDate = birthDate;
-        this.telephone = telephone;
-        this.email = email;
-        this.rg = rg;
+    public ClienteModel(String address, String cep, int id, String name, char sex, Date birthDate, String telephone, String email, String rg) {
+        super(id, name, sex, birthDate, telephone, email, rg);
         this.address = address;
         this.cep = cep;
     }
 
-    public ClienteModel(int id, String name, char sex, String telephone, String address) {
-        this.id = id;
-        this.name = name;
-        this.sex = sex;
-        this.telephone = telephone;
+    public ClienteModel(int id, String name, String address, String cep) {
+        super(id, name);
         this.address = address;
+        this.cep = cep;
     }
-
     
-    
-    public Date getBirthDate() {
-        return birthDate;
-    }
-
-    public void setBirthDate(Date birthDate) {
-        this.birthDate = birthDate;
-    }
-
-    public String getTelephone() {
-        return telephone;
-    }
-
-    public void setTelephone(String telephone) {
-        this.telephone = telephone;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getRg() {
-        return rg;
-    }
-
-    public void setRg(String rg) {
-        this.rg = rg;
-    }
-
     public String getAddress() {
         return address;
     }
@@ -91,32 +42,4 @@ public class ClienteModel {
     public void setCep(String cep) {
         this.cep = cep;
     }
-    
-    
-    
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public char getSex() {
-        return sex;
-    }
-
-    public void setSex(char sex) {
-        this.sex = sex;
-    }
-    
-    
 }

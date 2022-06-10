@@ -10,53 +10,23 @@ import java.util.Date;
  *
  * @author Evandro
  */
-public class UserModel {
+public class UserModel extends PessoaModel{
     
-   
-    private int id;
-    private String name;
-    private String password;
-    private String accessLevel;
-    private Date birthDate;
-    private char sex;
-    private String telephone;
-    private String email;
-    private String rg;
+   private String password;
+   private String accessLevel;
 
-    public UserModel(int id, String name, String password, String accessLevel, Date birthDate, char sex, String telephone, String email, String rg) {
-        this.id = id;
-        this.name = name;
+    public UserModel(String password, String accessLevel, int id, String name, char sex, Date birthDate, String telephone, String email, String rg) {
+        super(id, name, sex, birthDate, telephone, email, rg);
         this.password = password;
         this.accessLevel = accessLevel;
-        this.birthDate = birthDate;
-        this.sex = sex;
-        this.telephone = telephone;
-        this.email = email;
-        this.rg = rg;
     }
 
-    public UserModel(int id, String email, String password) {
-        this.id = id;
-        this.email = email;
+    public UserModel(String password, String accessLevel, int id, String name) {
+        super(id, name);
         this.password = password;
+        this.accessLevel = accessLevel;
     }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
+   
     public String getPassword() {
         return password;
     }
@@ -72,46 +42,4 @@ public class UserModel {
     public void setAccessLevel(String accessLevel) {
         this.accessLevel = accessLevel;
     }
-
-    public Date getBirthDate() {
-        return birthDate;
-    }
-
-    public void setBirthDate(Date birthDate) {
-        this.birthDate = birthDate;
-    }
-
-    public char getSex() {
-        return sex;
-    }
-
-    public void setSex(char sex) {
-        this.sex = sex;
-    }
-
-    public String getTelephone() {
-        return telephone;
-    }
-
-    public void setTelephone(String telephone) {
-        this.telephone = telephone;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getRg() {
-        return rg;
-    }
-
-    public void setRg(String rg) {
-        this.rg = rg;
-    }
-    
-    
 }
